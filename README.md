@@ -90,5 +90,3 @@ poten al cyber threats, including Man-in-the-Middle (MITM) a acks and key compro
   - Digital Signatures: Ensure message authenticity and integrity.
   - AES Key Revocation System: Tracks and revokes compromised symmetric keys.
 
-## Link to Codespaces
-You can run this code in codespaces through the following link: https://turbo-guacamole-5gvrpxqwrqp52446x.github.dev/
