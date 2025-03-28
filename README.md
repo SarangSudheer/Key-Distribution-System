@@ -1,6 +1,6 @@
 # Key-Distribution-System
 
-### Introduction
+## Introduction
 In this digital era, conducting a secure communication and data protection is very much important.
 So, in order to address this problem I have come up with a Key Distribution System, where symmetric encryption is taken care by a Centralized Key Management System and asymmetric key is taken care by a Public Key Interface (PKI). This provides a secure way of exchanging encryption and decryption keys between 2 parties.
 
@@ -12,14 +12,14 @@ This Key Distribution System is designed to handle the following things:
 
 In a nutshell, this project focuses on generating, storing and exchanging cryptography keys securly by mitigating Man In the Middle Attack (MIMA) and revocing keys in case of key compromise.
 
-### Design Goals
+## Design Goals
 - Centralized Key Distribution (CKD) for symmetric encryption.
 - Public Key Infrastructure (PKI) for asymmetric encryption.
 - Secure key generation and storage.
 - Secure key exchange using Diffie-Hellman for symmetric key.
 - Revocation of keys in case of compromise.
 
-### Steps in Design
+## Steps in Design
 - Centralized Key Distribution (CKD) for symmetric encryption.
   - Diffie-Helman shared key generation.
   - Encrypting the generated AES Key with the shared key.
@@ -33,7 +33,7 @@ In a nutshell, this project focuses on generating, storing and exchanging crypto
   - Verifying the certificate
   - Revoking the certificate in case of any key compromise.
 
-### Project Structure
+## Project Structure
 ```
 Key Distribution System
 │──key_and_certificates             # Stores the keys and certificates
@@ -51,4 +51,44 @@ Key Distribution System
 
 ```
 
-### Installation and Setup
+## Installation and Setup
+### Prerequisites
+Ensure you have the following installed:
+
+- Python 3.8+
+- cryptography library
+
+### Install Dependencies
+```
+pip install cryptography
+```
+
+### Running Locally
+1. Clone the repository:
+   ```sh
+   gh repo clone SarangSudheer/Key-Distribution-System
+   ```
+2. Run the script:
+   ```sh
+   python main.py
+   ```
+### Running on GitHub Codespaces
+1. Open the repository on GitHub.
+2. Click on the **Codespaces** tab.
+3. Select **New Codespace** to launch an online development environment.
+4. Run the `main.py` script inside the terminal.
+
+## Mitigating Attacks in the Secure Key Management System
+Our Secure Key Management System (KMS) integrates several security mechanisms to mi gate 
+poten al cyber threats, including Man-in-the-Middle (MITM) a acks and key compromise. 
+- Mitigating Man-in-the-Middle (MITM) Attacks
+  - Public Key Infrastructure (PKI): Ensures authentication via trusted Certificate Authorities (CAs).
+  - Diffie-Hellman Key Exchange: Establishes a shared secret securely without transmitting it over the network.
+  - AES Encryption: Encrypts sensitive data to prevent eavesdropping.
+- Handling Key Compromise
+  - Certificate Revocation Lists (CRLs): Prevent compromised keys from being used.
+  - Digital Signatures: Ensure message authenticity and integrity.
+  - AES Key Revocation System: Tracks and revokes compromised symmetric keys.
+
+## Link to Codespaces
+You can run this code in codespaces through the following link: https://turbo-guacamole-5gvrpxqwrqp52446x.github.dev/
