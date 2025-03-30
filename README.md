@@ -78,9 +78,6 @@ pip install cryptography
 3. Select **New Codespace** to launch an online development environment.
 4. Run the `main.py` script inside the terminal.
 
-## Demo Video
-[Click Image to Watch Demo !!!!](key distribution system/task2terminal.png)[https://drive.google.com/file/d/1YDxCwLJSD8AlPpyC2SclvVfV0Hmfki-W/view?usp=drive_link]
-
 ## Mitigating Attacks in the Secure Key Management System
 Our Secure Key Management System (KMS) integrates several security mechanisms to mi gate 
 poten al cyber threats, including Man-in-the-Middle (MITM) a acks and key compromise. 
